@@ -1,11 +1,11 @@
 # optimal-blocks-timeout
-Este repositorio contiene un script para calcular el **tiempo óptimo \(T_{opt}\)** para enviar bloques de votos a la blockchain, usando la distribución de Poisson para modelar la llegada de votos.
+Este repositorio contiene un script para calcular el **tiempo óptimo $T_{opt}$** para enviar bloques de votos a la blockchain, usando la distribución de Poisson para modelar la llegada de votos.
 
 ---
 
 ## Archivo principal
 
-- `timeopt.py` : Script en Python que calcula \(T_{opt}\) para un bloque de tamaño `k` y una tolerancia `epsilon`.
+- `timeopt.py` : Script en Python que calcula $T_{opt}$ para un bloque de tamaño `k` y una tolerancia `epsilon`.
 
 ---
 
@@ -32,12 +32,12 @@ Este repositorio contiene un script para calcular el **tiempo óptimo \(T_{opt}\
 
 ## Explicación del algoritmo
 
-- Se usa **búsqueda binaria** para hallar μ tal que \( P(X \le k-1) = \varepsilon \), donde \( X \sim Poisson(\mu) \).
+- Se usa **búsqueda binaria** para hallar μ tal que $P(X \leq k-1) = \varepsilon$, donde $X \sim Poisson(\mu)$.
 - Luego, el tiempo óptimo se calcula como:
 
-\[
+$$
 T_{opt} = \frac{\mu}{\lambda}, \quad \lambda = \frac{N}{1440} \text{ votos por minuto}
-\]
+$$
 
 - La probabilidad de que el bloque se llene se calcula con la función de distribución acumulada de Poisson (`poisson.cdf` de `scipy`).
 
