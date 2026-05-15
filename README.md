@@ -36,9 +36,9 @@ The script will output:
 
 Binary search is used to find $\mu$ such that
 
-$$
-P(X \leq k-1) = \varepsilon,
-$$
+```text
+P(X ≤ k - 1) = ε
+```
 
 where
 
