@@ -29,7 +29,7 @@ The script will ask for:
 
 The script will output:
 
-- `T`: optimal time (in minutes) to fill a block with probability 1-ε
+- `T`: optimal time (in minutes) to fill a block with probability `1-ε`
 - The probability that the block is filled within that time
 
 ## Algorithm Explanation
@@ -65,7 +65,7 @@ Este repositorio contiene un script para calcular el **tiempo óptimo $T_{opt}$*
 # optimal-blocks-timeout (Spanish)
 ## Archivo principal
 
-- `timeopt.py` : Script en Python que calcula $T_{opt}$ para un bloque de tamaño `k` y una tolerancia `epsilon`.
+- `timeopt.py` : Script en Python que calcula `T_opt` para un bloque de tamaño `k` y una tolerancia `epsilon`.
 
 ---
 
@@ -92,7 +92,7 @@ Este repositorio contiene un script para calcular el **tiempo óptimo $T_{opt}$*
 
 ## Explicación del algoritmo
 
-- Se usa **búsqueda binaria** para hallar μ tal que
+- Se usa **búsqueda binaria** para hallar `μ` tal que
  ```text
 P(X ≤ k - 1) = ε
 ```
