@@ -113,5 +113,5 @@ T_opt = μ / λ
 
 ## Notas
 
-- La tolerancia `epsilon` se fija en 0.01 por defecto, pero puede modificarse según necesidad.
+- La tolerancia `ε` se fija en 0.01 por defecto, pero puede modificarse según necesidad.
 - El script está pensado para **simular bloques de mix-nodes** en sistemas de votación electrónica.
