@@ -1,10 +1,10 @@
 # optimal-blocks-timeout
 
-This repository contains a script to compute the optimal time T_opt for sending vote blocks to the blockchain, using the Poisson distribution to model the arrival of votes.
+This repository contains a script to compute the optimal time `T_opt` for sending vote blocks to the blockchain, using the Poisson distribution to model the arrival of votes.
 
 ## Main File
 
-- `timeopt.py`: Python script that computes T_opt for a block of size k and a tolerance ε.
+- `timeopt.py`: Python script that computes `T_opt` for a block of size `k` and a tolerance `ε`.
 
 ## How to Use
 
