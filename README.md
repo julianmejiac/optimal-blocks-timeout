@@ -57,7 +57,7 @@ The probability that the block is filled is computed using the cumulative distri
 
 ## Notes
 
-- The tolerance $\varepsilon$ is set to `0.01` by default, but it can be modified as needed.
+- The tolerance `ε` is set to 0.01 by default, but it can be modified as needed.
 - The script is intended to simulate mix-node blocks in electronic voting systems.
 Este repositorio contiene un script para calcular el **tiempo óptimo $T_{opt}$** para enviar bloques de votos a la blockchain, usando la distribución de Poisson para modelar la llegada de votos.
 
