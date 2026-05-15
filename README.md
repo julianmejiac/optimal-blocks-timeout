@@ -34,7 +34,7 @@ The script will output:
 
 ## Algorithm Explanation
 
-Binary search is used to find $\mu$ such that
+Binary search is used to find μ such that
 
 ```text
 P(X ≤ k - 1) = ε
@@ -42,18 +42,16 @@ P(X ≤ k - 1) = ε
 
 where
 
-$$
-X \sim \text{Poisson}(\mu).
-$$
+```text
+X ~ Poisson(μ)
+```
 
 The optimal time is then computed as
 
-$$
-T_{opt} = \frac{\mu}{\lambda},
-\qquad
-\lambda = \frac{N}{1440}
-\text{ votes per minute}.
-$$
+```text
+T_opt = μ / λ
+λ = N / 1440 votes per minute
+```
 
 The probability that the block is filled is computed using the cumulative distribution function of the Poisson distribution (`poisson.cdf` from `scipy`).
 
@@ -94,12 +92,20 @@ Este repositorio contiene un script para calcular el **tiempo óptimo $T_{opt}$*
 
 ## Explicación del algoritmo
 
-- Se usa **búsqueda binaria** para hallar μ tal que $P(X \leq k-1) = \varepsilon$, donde $X \sim Poisson(\mu)$.
+- Se usa **búsqueda binaria** para hallar μ tal que
+ ```text
+P(X ≤ k - 1) = ε
+```
+donde
+```text
+X ~ Poisson(μ)
+```
 - Luego, el tiempo óptimo se calcula como:
 
-$$
-T_{opt} = \frac{\mu}{\lambda}, \quad \lambda = \frac{N}{1440} \text{ votos por minuto}
-$$
+```text
+T_opt = μ / λ
+λ = N / 1440 votes per minute
+```
 
 - La probabilidad de que el bloque se llene se calcula con la función de distribución acumulada de Poisson (`poisson.cdf` de `scipy`).
 
